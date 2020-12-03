@@ -1,0 +1,12 @@
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore_global
+	# excludesfile = ~/.config/git/excludes
+[alias]
+	dag = log --graph --format='format:%C(yellow)%h%C(reset) %C(blue)\"%an\" <%ae>%C(reset) %C(magenta)%ar%C(reset)%C(auto)%d%C(reset)%n%s' --date-order
+	st = status
+	co = checkout
+	br = branch
+	amend = commit --amend --no-edit
+	logg = log -p -- ':!package-lock.json' ':!yarn.lock'
+	difff = diff -- ':!package-lock.json' ':!yarn.lock'
